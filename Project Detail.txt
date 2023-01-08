@@ -1,0 +1,1125 @@
+Important Links :
+1) Amcat - https://drive.google.com/drive/folders/1DyII-8_a_XXkiNzyMBvyHWoXyhPJulnl
+
+
+
+
+EMAIL/SMS SPAM CLASSIFIER 
+
+Email sms spam classifier is a ML model which is capable of clasifying mail or sms is spam or not , so for this model I have
+used Multinomial Naiyes Algorithm which gave me accuracy 97% and  precision of 1 . So this project is performed in various steps
+such as :
+1) Data set is taken from Kaggel which is UCI Machine Learning for Spam and ham messages
+2) Performing  Data Cleaning 
+3) EDA 
+4) Test Preprocessing using nltk library 
+5) Model Building 
+6) Comparing it with other classification Algorithm 
+ 
+7) Deploying to Heroku .
+
+
+
+Sorting Algorithm Visualizer  : It is a project which is used to visualize the working of  various sorting Algorithm such as 
+Insertion sort , Selection  sort , bubble sort , Merge sort and quick sort . So from this project I learnt about Javascript Dom 
+and Sorting Algorithm , This project is deployed to Netlify .
+
+Array size = 60  speed is 300 at  this Bubble sort took [30 sec] to complete 
+whereas insertion sort took [37 sec] , but when the array is sorted already so it took 1 sec to complete .
+
+Selection sort for same parameter time taken is 58 sec 
+Merge sort 27 sec 
+Quick sort took 20 sec .
+
+
+Crypto Currency Tracker 
+Crypto Currency Tracker is an application which is used to track crypto coin , there price , there Market Cap Value and there 
+historical Chart . So from this application user can keep the track of trending coin in last 24 hr and it is displayed in 
+a beautifull Carosel , User can search for the coin , they can view the coin on the base of Highest MArket cap value i  form of a table ,
+If they are intersted in a coin and want they to get more detail they can get it . In more detail they will get coin logo price rank and market
+cap value along with historical chart .
+
+So all there details is taken from the api that is Gecko.com 
+
+Added Firebase Integration So that user can sign up using Google and facebook account and can add the coin to there watchlist .
+
+So From This project I have learnt about React , Hooks  , Context api , React Router Dom , Material ui , chart js , firebase .
+
+Deployed This project On Netlify .
+
+
+-----------------------------------------------------------------------------
+
+Sorting a sorted array using Quick sort took 2 min .  
+ 
+----------------------------------------------------------------------------------------------------------------------------
+
+Machine Learning 
+
+Machine learning (ML) is a type of artificial intelligence (AI) that
+allows software applications to become more accurate at predicting outcomes 
+without being explicitly programmed to do so. 
+Machine learning algorithms use historical data as input to predict new output values.
+
+Recommendation engines are a common use case for machine learning. Other popular uses include fraud detection, spam filtering, malware threat detection, business process automation (BPA) and Predictive maintenance.
+
+Supervised learning: In this type of machine learning, data scientists supply algorithms with labeled training data and define the variables they want the algorithm to assess for correlations. Both the input and the output of the algorithm is specified.
+Unsupervised learning: This type of machine learning involves algorithms that train on unlabeled data. The algorithm scans through data sets looking for any meaningful connection. The data that algorithms train on as well as the predictions or recommendations they output are predetermined.
+Semi-supervised learning: This approach to machine learning involves a mix of the two preceding types. Data scientists may feed an algorithm mostly labeled training data, but the model is free to explore the data on its own and develop its own understanding of the data set.
+Reinforcement learning: Data scientists typically use reinforcement learning to teach a machine to complete a multi-step process for which there are clearly defined rules. Data scientists program an algorithm to complete a task and give it positive or negative cues as it works out how to complete a task. But for the most part, the algorithm decides on its own what steps to take along the way.
+So the Reinforcement Machine Learning Algorithms learn optimal actions through trial and error.  that will maximize the reward in the future.
+
+
+
+AI stands for Artificial Intelligence, and is basically the study/process which enables machines to mimic human behaviour through particular algorithm.
+ypes Of AI are: Artificial Narrow Intelligence (ANI), Artificial General Intelligence (AGI) and Artificial Super Intelligence (ASI)
+he aim is to basically increase chances of success and not accuracy.
+
+DL stands for Deep Learning, and is the study that makes use of Neural Networks(similar to neurons present in human brain) to imitate functionality just like a human brain.
+
+This method is considered when we want to modify a list and also keep a copy of the original. In this, we make a copy of the list itself, along with the reference.
+This process is also called cloning.
+
+-------------------------------------------Pyhton Basic-----------------------------------------
+
+Set : Sets are undordered collection that are mutable and iterable , set are used to store multiple item in single varible .
+myset = {"apple", "banana", "cherry"}
+They are mutable and cannot have duplcate value .
+
+
+myset = set(["a", "b", "c"])
+print(myset)
+ 
+# Adding element to the set
+myset.add("d")
+print(myset)
+
+
+Dictionary
+Dictionaries are used to store data values in key:value pairs.
+
+A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+Dictaonary are ordered , changeable and  do not allow duplicate value 
+
+
+List is a collection which is ordered and changeable. Allows duplicate members.
+A list in Python is used to store the sequence of various types of data.
+list = [1,2,3,4,5]
+
+
+Tuple is a collection which is ordered and unchangeable. Allows duplicate members.() // this is used .
+
+The list is dynamic, whereas the tuple has static characteristics. This means that lists can be modified whereas tuples cannot be modified, the tuple is faster than the list because of static in nature. Lists are denoted by the square brackets but tuples are denoted as parenthesis.
+
+Dictionary is a collection which is ordered** and changeable. No duplicate members.
+
+
+A lambda function is a small anonymous function.
+
+A lambda function can take any number of arguments, but can only have one expression.
+
+x = lambda a : a + 10
+print(x(5))
+
+x = lambda a, b, c : a + b + c
+print(x(5, 6, 2))
+
+Why Use Lambda Functions?
+The power of lambda is better shown when you use them as an anonymous function inside another function.
+
+Say you have a function definition that takes one argument, and that argument will be multiplied with an unknown number:
+
+def myfunc(n):
+  return lambda a : a * n
+
+def myfunc(n):
+  return lambda a : a * n
+
+mydoubler = myfunc(2)
+
+print(mydoubler(11))
+
+
+
+---------------------Pl/sql --------- Difference between procedure and function 
+
+Procedure Vs. Function: Key Differences
+Procedure	Function - They are also called standalone program because
+                            they are used for performing the calculation 
+Used mainly to a execute certain process
+Used mainly to perform some calculation
+
+Cannot call in SELECT statement
+A Function that contains no DML statements can be called in SELECT statement
+
+Use OUT parameter to return the value
+Use RETURN to return the value
+
+It is not mandatory to return the value
+It is mandatory to return the value
+
+
+Function synatx 
+
+create or replace function welcome_function_name(p_name IN varchar2)
+return varchar2
+is
+begin
+return ('Welcome' || p_name);
+end ;
+
+
+declare 
+ln_message varchar2(50);
+begin 
+ln_message := welcome_function_name('pawan ');
+
+dbms.output.put_line(ln_message);
+end ;
+
+
+
+// Procedure --> 
+
+Creating a sequence first 
+
+create sequence  Test_sequence4 
+min_value = 1 
+max_value = 9999999999
+start with 1 
+increment by 1 
+cache(20) ;
+
+employee 
+emp_name , emp_id , salary , address 
+create or replace procedure sp_enter_detail(p_emp_name in varchar2 , p_emp_id out varchar2
+                                            p_salary in Integer , p_err_cd  out number ,
+                                            p_err_msg out varchar2 ) 
+as
+lv_resource_id number ; 
+
+begin 
+    
+      select test_sequence4.next_value into lv_resource_id fro dual ;
+      insert into demotable(emp_id , emp_name , emp_salary ) values 
+      (lv_resource_id , p_emp_name , emp_salary)
+      p_emp_id :=lv_resource_id ;
+      commit ;
+
+
+    Exception
+    when other then 
+    p_err_cd :=1 
+    p_err_msg :='problem in creating table ';
+    Return ;
+end ;
+
+
+--- Cursor ---------------------------------------------------------
+// Creating Procedure for fetching the detail of Employee and returning it .
+
+create or replace procedure fetch_theEmplyee_detail(p_emp_id in number ,
+                                                    p_list_cursor out sys_refcursor ,
+                                                    p_err_cd out varchar2 ,
+                                                    p_err-cd out varchar2 )
+as 
+
+begin 
+   p_err_cd:0 
+   
+   open p_list_cursor for 
+   select * from Employee_table where emp_id = p_emp_id ;
+   commit ;
+
+   Exception 
+   p_err_cd : 1 ;
+   p_err_msg : "problem in fetching the emp_detail in cursor " || ||Sqlerrm;
+
+   Return ;
+
+end fetch_theEmployee_detail 
+
+
+The function SQLERRM returns the error message associated with its error-number argument
+Varchar2 is an Orcale standard which store for storing the character value and it has
+ variable length data type that can be from 1 byte to 2000 byte .
+
+
+Vachar is also similar to varchar2 but Varchar is ANSI standard .
+
+
+
+  
+
+ 
+---------------------------------------------------------------------------------------------
+CREATE SYNONYM
+
+Use the CREATE SYNONYM statement to create a synonym, which is an alternative name for 
+a table, view, sequence, procedure, stored function, package, materialized view, 
+Java class schema object, user-defined object type, or another synonym.
+
+Prerequisites
+
+To create a private synonym in your own schema, you must have the CREATE SYNONYM system privilege.
+
+To create a private synonym in another user's schema, you must have the CREATE ANY SYNONYM system privilege.
+
+To create a PUBLIC synonym, you must have the CREATE PUBLIC SYNONYM system privilege.
+
+For example, the schemas oe and sh both contain tables named customers. In the next example, user SYSTEM creates a PUBLIC synonym named customers for oe.customers:
+
+CREATE PUBLIC SYNONYM customers FOR oe.customers; 
+
+create public synonym employee for gm_emp_mobapp ;
+
+
+
+
+---------------------------------------------------------------------------------------------------
+Triggers : They are the special Type of sp which is called automatically whenever some 
+event occurs . 
+
+create trigger student_per_total 
+before Insert 
+on student 
+for each row 
+set student.total = student.subject1 +student.subject2 , student.perc = s 
+
+creater trigger stud_marks
+before Insert 
+on 
+student 
+f  or each row 
+set student.total = Student.sub1 + student.sub2 + student.sub3 , student.per = student.total*60/100 
+ 
+
+Views - View are the virtual table and these are used we want tha data from multilple table ,
+or we dont want to make the changes the original table and perform our task 
+
+view table [Student_Name , Sudent_rollNo]  As 
+select student_name , student_rollNo 
+from Student 
+where student_roll_No = '121';
+
+-----------------------------------------------------------------------------------
+
+Promise Revision 
+
+function myDispla(some){
+document.getElementById("demo").innerHTML = some ;
+}
+
+let mypromise = new Promise(function(myResolve, myReject)){
+
+let x = 0 ;
+
+if(x==0){
+myResolve();
+}else{
+myReject();
+}
+})mypromise.then(
+
+function(value) { myDisplaye(value )/*Code is  Complied Successfully*/}
+function(error) { myDisplayer(Error)/*Code is Not Complied Successfully*/}
+
+
+-------------------------------------------------------------------------------------------
+
+
+
+JAVA QUICK REVESION
+
+Java is third most popular language after python and c ++ , it is used in developing 
+mobie applcation , laptop application , game console  , it is also used in scientific 
+super copmputer .
+
+Three Main Component of Java 
+1) JVM - Java Virtual Machine so it functionality that we can run  our Java program in any 
+of the platform , Means write one and run everywhere . Jvm convert the byte code into 
+machine code which can be executed on the machine . 
+
+2) JRE = Java Runtime enviorment - Jre provide all the dependent libraues that are needed 
+and create an runtime envoiment for exceuting the java code . Jre should be installed 
+on the machine where we want to run .
+
+3) Java Developement tool kit - It is software developement enviorment where application 
+realted java are developed , It contins Jre and other development tools .
+
+
+4) Jit compiler  - just in time compiler : so it is is a part Of jre which is used to 
+improve the  perfomace of jaava applcation by comping byte to machine code .
+ 
+
+
+CONSTRUCTOR :
+
+It is special method which is used to initiate the object of the class . It has same name 
+as class name and it do not have any return type . 
+ Constructor are of three types :
+1) default constructor - Automatically called at tme of object creating .
+2) Parameter constructor - Have parameter and used to initiate the object with param
+3) copy costructor - it is called when we want to inlize new objecct same as the previous 
+   object .
+
+Ex : Class InterviewBit{
+String department ;
+String service ; 
+
+InterviewBit(InterviewBit ib)
+{
+ this.depart = ib.dept 
+}
+
+
+
+
+1) Constructore Cannnot be declared as Final Because it do not mak any sense because cons
+   are not inherited  in sub class 
+2) Constructor cannot be static in nature .
+3) Constructor can be private to implement singleton pattern design .
+
+
+FINAL Keyword with variable , method , classes 
+
+Final Keyword : When a variable is declared as final in Java, the value can’t be modified once it has been assigned.
+Final Method : A method declared as final cannot be overridden by its children's classes.
+              A constructor cannot be marked as final because whenever a class is inherited, the constructors are not inherited. Hence, marking it final doesn't make sense.
+Final Class : No classes can be inherited from the class declared as final. But that final class can extend other classes for its usage.
+
+
+
+Finalize - This keyword is used for garbage collection of Objects .
+
+
+STATIC KEYWORD IN JAVA - This keyword is used for memory management in java . so we can static 
+with variable , method , classs 
+
+ -> Variable -- Once a Variable is decalred as staic , a single copy of the variable is 
+                created and it is shared with all the object of that class .
+                We can directly call the static variable without object declaration .
+
+-> Method - Method can also be declared as static , when a method is decalared as static 
+            it can be overloaded but not  overrriden . static method can be used for accessing 
+            static variable and changing them , static method can be called without creating
+            class object . we can use just the class name .
+--> Class - A class can be made static only if it is a nested class. We cannot declare a top-level class with a static modifier
+ but can declare nested classes as static. Such types of classes are called Nested static classes
+
+WHy Main method is static in Nature : The main method is always static because static members are those methods that belong to the classes, not to an individual object.
+ So if the main method will not be static then for every object, It is available. And that is not acceptable by JVM
+. JVM calls the main method based on the class name itself. Not by creating the object.
+
+
+
+Static Mthod can be Overloaded but cannot be overriden .
+
+
+                
+INTERFACE IN JAVA 
+
+  Interface are used for specifying the behaviour  of a class and it is  used for solving the problem of Multiple Inheritance[ A class is 
+ inheriting the property for more than one class]   and abstraction in java .
+  In interface we have abstract method with the signature , there is no body of the abstrct 
+  method . and they have a IS-A realtion ship .
+
+Question : What is the Problem ? --> Diamond Problem . 
+
+EXP : GrandParent
+           /     \
+          /       \
+  Parent1(fun1)   Parent2(fun1)
+          \       /
+           \     /
+             Test
+So When the object of test is created and we call test.fun1() no which func to call ? 
+
+Here we can use Public , static , final keyword .
+
+To declare an interface, use the interface keyword. It is used to provide total abstraction. That means all the methods in an interface are declared with an empty body and are public and all fields are public, static, and final
+ by default.   
+
+Main Difference between Interface and Abstract class is that , interface help in achieving
+100% abstraction whereas Abstract Class can only partial abstraction 
+
+This is because of variable , method and multiple inheritance .The reason is, abstract classes may contain 
+non-final variables, whereas variables in the interface are final, public and static.
+
+
+Example of Multiple Inheritance By interface 
+
+interface AnimalEat {
+   void eat(); // no body 
+}
+interface AnimalTravel {
+   void travel();
+}
+class Animal implements AnimalEat, AnimalTravel {
+   public void eat() {
+      System.out.println("Animal is eating");
+   }
+   public void travel() {
+      System.out.println("Animal is travelling");
+   }
+}
+public class Demo {
+   public static void main(String args[]) {
+      Animal a = new Animal();
+      a.eat();
+      a.travel();
+   }
+}
+ 
+
+
+abstract class 
+In abstract classe we may have or not abstrct method , so without abstract metho we can implement
+the abstract class . and also we can have non final variables in abstarct class
+
+
+
+
+MULTILEVEL PROCESSING AND MULTITHREADING 
+
+Multiprocessing is a system that has more than one or two processors.
+In Multiprocessing, CPUs are added for increasing computing speed of the system. Because of Multiprocessing, There are many processes
+are executed simultaneously.
+
+Multithreading is a Java feature that allows concurrent execution of two or more parts of a program for maximum utilization of CPU.
+Each part of such program is called a thread. So, threads are light-weight processes within a process.threads use shared memory but they act independently hence if 
+there is an exception in threads that do not affect the working of other threads.
+
+Multitasking OS – Multitasking OS combines the benefits of Multiprogramming OS and CPU scheduling to perform quick switches between
+jobs. The switch is so quick that the user can interact with each program as it runs
+
+ENCAPSULATION ; - This is method of binding or hiding the data variable and method into
+a single unit just like all the medicine in the single unit .
+It help in ensuring the sercurity of private property of object and it also ensure the 
+modularity in the code by ensuring that each object is independent of other object in 
+term of attribute and functionality ..
+
+class person {
+
+private String person_name ; 
+private int age_of_person ;
+char martial_status ;
+
+public setValue(person_name , age_od_person)
+{
+this.person_name = person_name 
+}
+public int getAge()
+{
+return age 
+}
+]
+
+C++ code For Encapsulation 
+class Encapsulation
+{
+    private:
+        // data hidden from outside world
+        int x;
+         
+    public:
+        // function to set value of
+        // variable x
+        void set(int a)
+        {
+            x =a;
+        }
+         
+        // function to return value of
+        // variable x
+        int get()
+        {
+            return x;
+        }
+};
+ 
+
+This Keyword act as a reference variable which is used for refrencing the varaible , method 
+of the parent class .
+
+
+
+ABSTRACTION : In Abstraction we hide the implementation detail ans just provide the functionaity 
+to user 
+such as arr.length() -- Provide a method of getting length without knowing its impleemation 
+
+so For Implementing the Abstraction in Java 
+we use Abstract keyword : Non-access modifier
+
+EX:
+ abstract class Animal{
+public void abstract animalSound()
+public void sleep()
+{
+System.ou.println("ZZZ");
+}
+}
+
+Animal obj = new Animal(); // This line is going to throw an error . we cannot intlize the object
+
+class Pig extends Animal
+{
+ public void A=animalSound()
+{
+System.out.println("The pis says : wee wee);
+}
+}
+
+  
+Polymorphism : It is a way of represnting the data in more than one form .
+A person at the same time can have different characteristics. Like a man at the same time is a father, a husband, an employee. 
+So the same person possesses different behavior in different situations. This is called polymorphism. 
+
+In Java and C++ Ploymorphism is divided in 2 form 
+1) Compile Time polymorphism 
+2) Run Time Polymorphism 
+
+Complie time polymorphism is also know as  Static binding and this is achieved with the 
+help of Operator overloading and method overloading .
+
+Method overloading 
+
+class findArea{
+
+public int findArea(int l , int b )
+{
+int ans ;
+ans = l*b; 
+return ans ;
+}
+public int findArea(int l , int b , int h){
+int ans1 ;
+ans = l*b*h ;
+}}
+
+
+
+Run Time Polymorphism : Achieved from method overriding 
+
+class HumanBeing{
+public int walk(int distance , int time ){
+int speed = distance/time ;
+return speed ;}
+}
+class Athlete extends HumanBeing{
+@override 
+public int walk(int distance , int time)
+{
+System.out.println("Human Being Speed");
+// super -- super walk();
+
+System.out.println("Athlete Speed ");
+int speed = distance/time ;
+speed*=2 ;
+return speed ;
+}}
+
+pulic static void Main(String args[])
+{
+Athlete a = new Athlete() ;
+a.walk(1000 , 4);
+
+}
+
+
+Virtual function is a method function which is overriden in sub class with same name and 
+same parameter to achieve run time polymorphism .
+
+Virtual Function
+Definition
+ A virtual function has its definition in the base class
+ class base {
+public:
+    virtual void print()
+    {
+        cout << "print base class\n";
+    }
+  
+    void show()
+    {
+        cout << "show base class\n";
+    }
+};
+  
+class derived : public base {
+public:
+    void print()
+    {
+        cout << "print derived class\n";
+    }
+  
+    void show()
+    {
+        cout << "show derived class\n";
+    }
+};
+  
+int main()
+{
+    base *bptr;
+    derived d;
+    bptr = &d;
+ 
+
+Declaration
+virtual funct_name(parameter_list) 
+{. . . . . ;
+}
+Child classes
+All the child classes may or may not redefine the virtual function definition of the parent class
+
+Effect
+They are hierarchical in nature and do not affect the compilation process if any of the child class do not override the
+ virtual function of a parent class then it’s allowed 
+
+Abstract class
+abstract class is not possible
+
+Example program
+#include
+using namespace std;
+class B {
+public:
+  virtual void m()//virtual function  
+  {
+    cout<<" In Child \n";
+  }
+};
+class D: public B {
+  public:
+  void m() {
+    cout<<"In Child \n";
+  }
+};
+int main() 
+{
+  D d; // An object of class D
+  B *b= &d;// A pointer of type B* pointing to d
+  b->m();// prints"D::m() called
+}
+O/P 
+In Child 
+
+
+Pure Virtual Function
+Definition
+Pure virtual functions will not have any definition in the base class
+
+Declaration
+
+virtual funct_name(parameter_list)=0;
+
+Child class
+All child classes must override the virtual function of the parent class
+
+Effect
+If any of the child class failed to override the virtual function of the base class then a compilation error will occur
+
+Abstract class
+If a class contains at least one pure virtual function then it is abstract
+
+Example program
+#include<iostream>
+using namespace std;
+class B {
+  public:
+  virtual void m() = 0; // Pure Virtual Function
+};
+
+class D:public B {
+  public:
+  void s() {
+    cout << " Virtual Function in child class\n";
+  }
+};
+
+int main() {
+  B *b;
+  D dobj; // An object of class D
+  b = &dobj;// A pointer of type B* pointing to dobj
+  b->s();// prints D::s() called
+}
+
+O/P
+Virtual Function in child class
+Conclusion
+Virtual functions and pure virtual functions both have their own importance as virtual function all child classes need not be overridden the virtual function of the parent class and in some situation, whether we want all the
+ child classes must and should redefine the virtual function the parent class then pure virtual function best suits  
+
+------------------------------------------------------------------------------------   
+
+
+COMPUTER NETWORK NOTES AND IMP QUESTION
+
+1) How Internet work?
+
+Ans : Generally, two main components uphold the functionality of the Internet, they are:
+
+Packets
+Protocols
+
+------------------------------------------------------------------------------------------
+
+SOFTWARE DEVELOPEMENT IMP QUESTION
+
+
+1) Classic WaterFall Model In Software Enginee
+ Feasiblity Study , Requirement Analysis , Design , Coding and unit testing  , system testing and Integration , Maintaince 
+
+Advantage 
+1) Suitable for  small projects 
+2) Simple and easy 
+3) Base model 
+
+Disadvantage 
+1) no feedback 
+2) No customer Satisfaction 
+3) no parellism 
+4) high risk 
+
+2) Iterative Model 
+ feasiblity , requirement  analysis , design ,  coding and unit testing , system Testing and Integration , maintaince , and back to req.
+
+There is a Feedback that can be given to previous state till requirement analysis .
+
+Disadvantage 
+1) no face overlapping , not parallel working 
+2) no Intermidate delivery  , there is no partially delivery , there is customer interation 
+
+
+3)Incremental Model 
+Requirements , Build1 , build2 , build3 ...... 
+
+ 1)Module by Module development , specially for the large project ex lms 
+ 2)Customer Interaction Maximum 
+ 3)Easy  Realase Product demand 
+ 4)Flexible to change 
+
+
+4) Spiral Model - Risk hai , Risk Analysis 
+1) Objective determination and identify alternat soln 
+2) identify and resolve risk  ---- Imp [making prototype and checking all the risk and resolve them]
+3) develop next version of prduct
+4)Review and plan for next phase 
+
+used for large project like isro
+Disadvantage 
+1)complex 
+2)expensive 
+3) Too much risk Analysis
+
+5) Agile Model (Agile -- Move quickly)
+ Large project --> small chunks[Iteration]
+ --> realase --> feedback --> modifying --> realease 
+
+Advantage 
+1) Frequent Delivery 
+2) Face to face comuunication 
+3) change 
+4) Time 
+DisAdvantage 
+1) less Documentation 
+2) maintaince Problem 
+
+------------------------------------------------------------------------------------------------------------------------
+
+Things to revise 
+
+1) Projects - Email Spam classifier , sorting
+2) Internship - Project , Plsql --> cursor , sp , function 
+3) DBMS , SQL 
+4) OOPS [Last minutes notes prep]
+5) Networking 
+6) JAVA
+
+
+-`----------------------------------------------------------------------------------------------------------------------------
+
+BASIC DSA QUESTION
+
+1)GCD Of Two Numbers 
+   
+   Approcah have time complexity of Max(a,b) HCF = 12 
+  int num1 = 36, num2 = 60, hcf = 12;
+
+    for(int i = 1; i <= num1 || i <= num2; i++)
+    {
+        if(num1 % i == 0 && num2 % i == 0)
+            hcf = i;
+    }
+
+    cout<<"HCF of "<<num1<<" and "<<num2<<" is "<<hcf;
+
+    return 0;
+
+Second Method : Go with Recusrsion 
+nt getHCF(int a, int b)
+{
+    return b == 0 ? a : getHCF(b, a % b); 
+}
+Complexity --log(max(a,b))
+
+2) LCM Of Two Number
+int num1 = 12, num2 = 14, lcm;
+
+    // finding the larger number here
+    int max = (num1 > num2)? num1 : num2;
+
+    // LCM will atleast be >= max(num1, num2)
+    // Largest possibility of LCM will be num1*num2
+    for(int i = max ; i <= num1*num2 ; i++)
+        {
+            if(i % num1 == 0 && i % num2 == 0){
+                lcm = i;
+                break;
+            }
+        }
+
+    cout<<"LCM of "<<num1<<" and "<<num2<<" is "<<lcm;
+
+    return 0;
+
+Second Choise 
+int getHCF(int a, int b)
+{
+    return b == 0 ? a : getHCF(b, a % b);
+}
+
+int main()
+{
+    int num1 = 12, num2 = 14; --> LCM = 84
+
+    int hcf = getHCF(num1, num2);
+
+    // LCM formula
+    int lcm = (num1*num2)/hcf;
+
+    cout<<"LCM of "<<num1<<" and "<<num2<<" is "<<lcm;
+
+    return 0;
+}
+
+3) Leap Year Or Not 
+1. If a year is divisible by 400, it's a leap year.
+2. If a year is divisible by 4 but not by 100 then its leap year
+
+4) Prime No or Not .
+int i,n = 13;
+    bool isprime= true;
+    
+    // 0 and 1 are not prime numbers also, negative numbers are not prime
+    if(n < 2)
+    {
+        isprime = false;
+    }
+    else
+    {
+        for(i=2;i < n;i++)
+        {
+            if(n % i == 0)
+            {
+                isprime = false;
+                break;
+            }
+        }
+    }
+
+    string result = isprime ? "Prime" : "not Prime";
+    cout<<"The number " << n << " is : " << result;
+    
+    return 0; --> O(n)
+
+2) Optimize Soln 
+int i,n = 33;
+    bool isprime= true;
+    
+    // 0 and 1 are not prime numbers also, negative numbers are not prime
+    if(n < 2)
+    {
+        isprime = false;
+    }
+    else
+    {
+    // running loop till n is wasteful because for any number n the numbers in
+    // the range(n/2 + 1, n) won't be divisible anyways.
+        for(i=2; i < n/2; i++)
+        {
+            if(n % i == 0)
+            {
+                isprime = false;
+                break;
+            }
+        }
+    }
+
+    string result = isprime ? "Prime":"not Prime";
+    cout<<"The number " << n << " is : " << result;
+    
+    return 0;
+
+3) Factor Of a Number 
+#include <bits/stdc++.h>
+using namespace std;
+
+void getFactors(int num){
+    
+    for(int i = 1; i <= sqrt(num); i++)
+    {
+        if (num % i == 0){
+            
+            // Example (10,10) we only want to print once
+            // If both factors are equal then print just one
+            if(i == num/i)
+                cout << i << " ";
+            // other wise print both
+            else
+                cout << i << " " << num/i << " "; 
+        }
+    }
+}
+
+//main Program
+int main()
+{
+    int num =100;
+     
+    getFactors(num);
+}
+// Time Complexity: O(√N)
+// Space Complexity: O(1)
+// Issue : Doesn't print in ascending ord
+ 
+
+4)
+ 
+---------------------------------------------------------------------------------------
+SQL QUERY
+
+1) Find nth highest salary                               
+--> Limit keyword 
+select salary
+from Employee
+order by salary desc limit n-1 , 1 ;
+-->
+select salary from employee emp1 
+where n-1 = (select count(distinct(emp2.salary)
+             from employee as emp2
+             where emp2.salary > emp1.salary)
+
+2) Query To create empty table with same Structure 
+create table NewTable 
+select * from EmployeeSalary where 1=0 ;
+
+3) Select even rows from table
+select * from EmployeeDetail
+where mod(emp%2)=0 ;        /// for Odd we use not 0 <>0
+
+4)Remove duplicates from table without using Temporary Table 
+
+---> Using Join
+delete E1 from EmployeeDetail E1
+INNER JOIN on EmployeeDetail E2
+where E1.EmpId > E2.Empid and 
+E1.name = E2.name and 
+e1.managerid = e2.managerid 
+
+---> Using Group by 
+select fullName , MagaerId , count(*)
+from employeeDetail
+group by fullName , ManagerId , Date , city
+having count(*)>1 ;
+
+5)select project , count(empId) empprojectCount
+from employeesalary
+group by project
+order by empprojectCount desc;
+
+6)SQL query to fetch all employee records from the EmployeeDetails table who have 
+a salary record in the EmployeeSalary table.
+
+select * from es as e where exists(
+select * from es as S
+where e.empId = s.empId 
+)
+
+7). Write an SQL query to find the count of the total occurrences of a particular 
+character – ‘n’ in the FullName field.
+
+select fullName , Length(fullName) - Length(replace(fullName , 'n','')from rm
+
+8) Write a query to fetch only the first name(string before space) from the 
+FullName column of the EmployeeDetails table.
+     
+SELECT SUBSTRING(FULLNAME , 1  , CHARINDEX(FULLNAME , '') FROM ED ;
+
+9) Write an SQL query to display both the EmpId and ManagerId together.
+select concat(empid , managerid) as Newid from EmployeeDetail
+
+10)Write an SQL query to fetch the EmpIds that are present in EmployeeDetails but 
+not in EmployeeSalary.
+
+select EmpId from employeeDetail where empid not in (select empid from employeesalary)
+
+11) Write an SQL query to fetch common records between two tables.
+select * from rs intersect select * from ms ;
+
+12)Write an SQL query to fetch all the EmpIds which are present in either of the 
+tables – ‘EmployeeDetails’ and ‘EmployeeSalary’.
+select empId from eD union select empId from md
+
+13) Write an SQL query to fetch the employees whose name begins with any 
+two characters, followed by a text “hn” and ends with any sequence of characters.
+
+SELECT FullName
+FROM EmployeeDetails
+WHERE FullName LIKE ‘__hn%’;
+---------------------------------------------------------------------------------
+14) Date & time 
+
+Using To_Char function 
+
+select to_char(sysdate , 'year') from dual Twenty twenty three
+select to_char(sysdate , 'YYYY') from dual 2023
+select to_char(sysdate , 'YY') from dual  23
+
+Date lies in which quater
+select to_char(sysdate , 'Q') from dual -->1 
+
+Date Month
+select to_char(sysdate , 'MON') from dual --> January
+select to_char(sysdate , 'MM') from dual ---> 01
+
+
+DAY
+select to_char(sysdate , 'DAY') from DUAL --> SUNDAY
+
+Date 
+select to_char(sysdate , 'DD') from dual --> 08
+
+Which day is of the year 
+select to_char(sysdate , 'DDD') from dual --> 08
+Which day of the Weak 
+select to_char(sysdate , 'D') from dual --> 7
+
+Which Month of the weak 
+select to_char(sysdate , 'W') from dual --> 1 
+Which week of the Year 
+select to_char(sysdate , 'WW') from dual --> 1
+
+
+Find the weekday of last day of previous month of a date column
+
+1) select payment_day from payment
+2)select add_months(payment_day , -1) from payment
+3)select Last-day(add_months(payment_day , -1)) from payment
+4)select to_char(Last-day(add_months(payment_day , -1)),'D') from payment
+
+
+
+ 
+	
